@@ -1,0 +1,75 @@
+@use 'abstracts' as *;
+
+// ============================================================
+// Reset / 기본 스타일
+//  - Vuetify styles 에 normalize 가 포함되어 있으므로 프로젝트 보정만 작성
+// ============================================================
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    font-size: $font-size-base;
+    line-height: 1.5;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Vuetify 기본 폰트도 프로젝트 폰트로
+.v-application,
+.v-application [class*='text-'] {
+    font-family: $font-family !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+:focus-visible {
+    outline: 2px solid rgb(var(--v-theme-primary));
+    outline-offset: 2px;
+}

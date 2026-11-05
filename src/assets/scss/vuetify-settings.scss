@@ -1,0 +1,20 @@
+/**
+ * Vuetify SASS 변수 오버라이드 (UI 라이브러리 테마 커스터마이징)
+ * https://vuetifyjs.com/features/sass-variables/
+ *  - 색상은 plugins/vuetify.js 의 theme 에서 관리합니다.
+ */
+@use 'vuetify/settings' with (
+    $body-font-family: (
+        'Pretendard Variable',
+        Pretendard,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        'Malgun Gothic',
+        sans-serif,
+    ),
+    $border-radius-root: 8px,
+    $button-font-weight: 600,
+    $button-text-letter-spacing: 0,
+    $ripple-animation-visible-opacity: 0
+);

@@ -1,0 +1,81 @@
+// ============================================================
+// SCSS 변수 (색상 / 폰트 / 간격 / 레이아웃)
+//  - 모든 SFC <style lang="scss"> 에 자동 주입됩니다. (vite.config.js additionalData)
+//  - 변수/믹스인만 둘 것 (CSS 를 출력하는 코드를 넣으면 모든 컴포넌트에 중복 포함됨)
+//  - 테마 색상은 다크모드 대응을 위해 가급적 Vuetify CSS 변수를 사용하세요.
+//      color: rgb(var(--v-theme-primary));
+//      background: rgb(var(--v-theme-surface));
+// ============================================================
+
+// ---------------- 색상 (plugins/vuetify.js brand 와 동일하게 유지) ----------------
+$color-primary: #2563eb;
+$color-secondary: #475569;
+$color-success: #16a34a;
+$color-warning: #f59e0b;
+$color-error: #dc2626;
+$color-info: #0ea5e9;
+
+$gray-50: #f8fafc;
+$gray-100: #f1f5f9;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e1;
+$gray-500: #64748b;
+$gray-700: #334155;
+$gray-900: #0f172a;
+
+// ---------------- 폰트 ----------------
+$font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    'Apple SD Gothic Neo',
+    'Malgun Gothic',
+    sans-serif;
+
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.8125rem; // 13px
+$font-size-base: 0.875rem; // 14px
+$font-size-lg: 1rem; // 16px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// ---------------- 간격 (4px 단위) ----------------
+$spacer: 4px;
+$spacer-1: $spacer; // 4
+$spacer-2: $spacer * 2; // 8
+$spacer-3: $spacer * 3; // 12
+$spacer-4: $spacer * 4; // 16
+$spacer-5: $spacer * 5; // 20
+$spacer-6: $spacer * 6; // 24
+$spacer-8: $spacer * 8; // 32
+$spacer-10: $spacer * 10; // 40
+
+// ---------------- 형태 ----------------
+$border-radius-sm: 4px;
+$border-radius: 8px;
+$border-radius-lg: 12px;
+
+// ---------------- 레이아웃 ----------------
+$header-height: 56px;
+$sidebar-width: 256px;
+$sidebar-rail-width: 64px;
+$content-max-width: 1600px;
+$content-padding: $spacer-6;
+$content-padding-mobile: $spacer-4;
+
+// ---------------- 반응형 (Vuetify breakpoint 와 동일) ----------------
+$breakpoints: (
+    sm: 600px,
+    md: 960px,
+    lg: 1280px,
+    xl: 1920px,
+);
+
+$z-index-header: 1000;
+$z-index-loading: 3000;
